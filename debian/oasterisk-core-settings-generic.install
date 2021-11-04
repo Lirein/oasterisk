@@ -1,0 +1,15 @@
+web/modules/core/views/settings/drivers.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/trunks.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/users.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/integration.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/dialplan.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/licenses.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/logs.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/security.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/general.php /var/www/oasterisk/web/modules/core/views/settings/
+web/modules/core/views/settings/general/appearence.php /var/www/oasterisk/web/modules/core/views/settings/general/
+web/modules/core/views/settings/general/asterisk.php /var/www/oasterisk/web/modules/core/views/settings/general/
+web/modules/core/views/settings/general/features.php /var/www/oasterisk/web/modules/core/views/settings/general/
+web/modules/core/views/settings/general/musiconhold.php /var/www/oasterisk/web/modules/core/views/settings/general/
+web/modules/core/views/settings/general/rtp.php /var/www/oasterisk/web/modules/core/views/settings/general/
+web/modules/core/views/settings/general/fax.php /var/www/oasterisk/web/modules/core/views/settings/general/

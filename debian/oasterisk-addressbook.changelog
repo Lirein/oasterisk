@@ -1,0 +1,18 @@
+oasterisk (0.9.14-r705) unstable; urgency=medium
+
+  Добавлена подсистема конфигурации настроек конференц комнат в адресной книге
+
+ -- Ivan Batalin <director@oas.su>  Mon, 11 May 2020 12:24:44 +0500
+
+oasterisk (0.9.14-r704) unstable; urgency=medium
+
+  Текущие исправления
+  Исправление пиров и транков
+
+ -- Ivan Batalin <director@oas.su>  Mon, 11 May 2020 12:17:12 +0500
+
+oasterisk (0.9.14) unstable; urgency=medium
+
+  + Addressbook initial build
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500

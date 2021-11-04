@@ -1,0 +1,15 @@
+./web/modules/core/views/settings/drivers.php
+./web/modules/core/views/settings/trunks.php
+./web/modules/core/views/settings/users.php
+./web/modules/core/views/settings/integration.php
+./web/modules/core/views/settings/dialplan.php
+./web/modules/core/views/settings/licenses.php
+./web/modules/core/views/settings/logs.php
+./web/modules/core/views/settings/security.php
+./web/modules/core/views/settings/general.php
+./web/modules/core/views/settings/general/appearence.php
+./web/modules/core/views/settings/general/asterisk.php
+./web/modules/core/views/settings/general/features.php
+./web/modules/core/views/settings/general/musiconhold.php
+./web/modules/core/views/settings/general/rtp.php
+./web/modules/core/views/settings/general/fax.php

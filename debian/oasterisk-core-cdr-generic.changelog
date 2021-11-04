@@ -1,0 +1,51 @@
+oasterisk (0.9.14) unstable; urgency=medium
+
+  * Завершение рефакторинга ядра на уровне моделей
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500
+
+oasterisk (0.9.13-r395) unstable; urgency=medium
+
+  * Jouurnal showing only current date by default
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 Oct 2019 20:46:33 +0500
+
+oasterisk (0.9.13-r355) unstable; urgency=medium
+
+  * CDR views datetime pickers min/max date refresh fix
+  * CDR table cleanup fix
+
+ -- Ivan Batalin <director@oas.su>  Thu, 01 Aug 2019 07:38:46 +0500
+
+oasterisk (0.9.13-r348) unstable; urgency=medium
+
+  + Added confbridge CDR support
+  * Fix sip ordering when save
+  * Fix confgroup deletion
+
+ -- Ivan Batalin <director@oas.su>  Mon, 29 Jul 2019 21:27:24 +0500
+
+oasterisk (0.9.13-r346) unstable; urgency=medium
+
+  + Tree widget unselect node event support
+  + Alternative group management multiple selection support
+  + Added table widget
+  + Added new CDR processor engine
+  + Added audio widget
+  * Weidgetset buttons fix
+  * Tree widget selections fix
+  * Tree widget checkbox appearence converted to bootswatch yeti style
+  * Some text fixes
+  * Fixed text and orphography
+  * Fixed license agreements
+  * Changed tree widget appearence
+  * CDR grouping widget
+  * Added altgroups tree multiple select and change support
+
+ -- Ivan Batalin <director@oas.su>  Thu, 25 Jul 2019 20:55:56 +0500
+
+oasterisk (0.9.13-1) unstable; urgency=medium
+
+  + Separated into dedicated module
+
+ -- Ivan Batalin <director@oas.su>  Sat, 06 Jul 2019 15:18:07 +0500

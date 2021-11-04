@@ -1,0 +1,7 @@
+c9427d42d68d97a309e8578aba1d6df6  usr/share/doc/oasterisk-dahdi/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-dahdi/copyright
+96292e81d2888447151ce510dbd31883  var/www/oasterisk/web/modules/chan_dahdi/license.php
+06dc4a3e533c174fbdadd97322bd182f  var/www/oasterisk/web/modules/chan_dahdi/peers.php
+c67128c5887b19c07c7c4b17ecec04bf  var/www/oasterisk/web/modules/chan_dahdi/version
+adcdcd5ee3fe27d9c7a80d9a5a3ffa64  var/www/oasterisk/web/modules/chan_dahdi/views/peers.php
+405b6c0a8586e6c00279785c5c0c2e9b  var/www/oasterisk/web/modules/chan_dahdi/zone.php

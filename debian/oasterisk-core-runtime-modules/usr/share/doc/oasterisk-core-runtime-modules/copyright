@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: oasterisk
+Upstream-Contact: OAS'terisk Developers <support@oas.su>
+
+Files: *
+Copyright: 2017 Open Automation Systems LLC
+License: EULA
+ License text needed

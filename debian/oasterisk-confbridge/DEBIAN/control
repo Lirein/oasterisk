@@ -1,0 +1,12 @@
+Package: oasterisk-confbridge
+Source: oasterisk
+Version: 0.9.14-r1264
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 437
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core (>= 0.9.14-r1264), gcc | clang
+Recommends: oasterisk-addressbook
+Section: web
+Priority: optional
+Description: OAS'tersik conference rooms package, provides conference rooms control, organisation and dialplan extensions

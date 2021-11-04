@@ -1,0 +1,5 @@
+./web/modules/chan_sip/peers.php
+./web/modules/chan_sip/trunks.php
+./web/modules/chan_sip/version
+./web/modules/chan_sip/views
+./web/modules/chan_sip/zone.php

@@ -1,0 +1,11 @@
+Package: oasterisk-dahdi
+Source: oasterisk
+Version: 0.9.14-r718
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 25
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core-settings-generic, asterisk-dahdi
+Section: web
+Priority: optional
+Description: OAS'tersik E1/T1 channel support, optional E1 package

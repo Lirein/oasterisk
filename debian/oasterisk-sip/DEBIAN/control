@@ -1,0 +1,11 @@
+Package: oasterisk-sip
+Source: oasterisk
+Version: 0.9.14-r1263
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 163
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core-settings-generic
+Section: web
+Priority: optional
+Description: OAS'tersik SIP channel support, optional part of core package

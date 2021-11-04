@@ -1,0 +1,176 @@
+Source: oasterisk
+Section: web
+Priority: optional
+Maintainer: Ivan Batalin <director@oas.su>
+Build-Depends: debhelper (>= 9~), subversion
+Standards-Version: 3.9.4
+
+Package: oasterisk-core
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: asterisk,
+         ssl-cert,
+         apache2,
+         libapache2-mod-php,
+         php-sqlite3,
+         php-zip,
+         php-xml,
+         memcached,
+         php-memcached | php7.0-memcached | php7.2-memcached,
+         php-mbstring,
+         php-mysql | php7.0-mysql | php7.0-mariadb
+Conflicts: elastics,
+           freepbx,
+           asterisknow
+Recommends: oasterisk-core-settings-generic,
+            oasterisk-core-settings-backup,
+            oasterisk-core-settings-codecs,
+            oasterisk-core-settings-dialplan,
+            oasterisk-core-settings-modules,
+            oasterisk-core-settings-security,
+            oasterisk-core-cdr-generic,
+            oasterisk-core-runtime-dashboard
+Suggests: oasterisk-sip,
+            oasterisk-core-cdr-simple,
+            oasterisk-core-runtime-modules
+Description: OAS'tersik core package, provides basic telephony controller features
+
+Package: oasterisk-core-seczones
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, adds additional layer of security - zones
+
+Package: oasterisk-core-settings-generic
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, generic settings
+
+Package: oasterisk-core-settings-backup
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, backup settings
+
+Package: oasterisk-core-settings-codecs
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, codec settings
+
+Package: oasterisk-core-settings-dialplan
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, dialplan settings
+
+Package: oasterisk-core-settings-logs
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, logger settings
+
+Package: oasterisk-core-settings-modules
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-generic (>= ${oasterisk-core-settings-generic:Version})
+Description: OAS'tersik core package, module loading/unloading settings
+
+Package: oasterisk-core-settings-security
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Suggests: oasterisk-core-settings-seczones
+Description: OAS'tersik core package, manager security with groups and scope support settings
+
+Package: oasterisk-core-settings-altsecurity
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Conflicts: oasterisk-core-settings-security
+Suggests: oasterisk-core-settings-seczones
+Description: OAS'tersik core package, manager security with groups and scope support settings
+
+Package: oasterisk-core-settings-seczones
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-security (>= ${oasterisk-core-settings-security:Version}), oasterisk-core-seczones (>= ${oasterisk-core-seczones:Version}),
+Description: OAS'tersik core package, security zones settings in security model full support
+
+Package: oasterisk-core-runtime-dashboard
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, dashboard runtime module
+
+Package: oasterisk-core-runtime-modules
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, modules current state runtime module
+
+Package: oasterisk-core-cdr-generic
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, generic CDR view - total and talk time difference
+
+Package: oasterisk-core-cdr-simple
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version})
+Description: OAS'tersik core package, simple CDR view - only talk time display
+
+Package: oasterisk-sip
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-generic
+Description: OAS'tersik SIP channel support, optional part of core package
+
+Package: oasterisk-dahdi
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-generic,
+         asterisk-dahdi
+Description: OAS'tersik E1/T1 channel support, optional E1 package
+
+Package: oasterisk-confbridge
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core (>= ${oasterisk-core:Version}),
+         gcc|clang,
+Description: OAS'tersik conference rooms package, provides conference rooms control, organisation and dialplan extensions
+
+Package: oasterisk-planfix
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-generic,
+         lame
+Description: OAS'tersik PlanFix integration
+
+Package: oasterisk-addressbook
+Architecture: all
+Section: web
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: oasterisk-core-settings-generic
+Description: OAS'tersik AddressBook extension

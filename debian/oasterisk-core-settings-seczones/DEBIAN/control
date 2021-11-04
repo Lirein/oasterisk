@@ -1,0 +1,11 @@
+Package: oasterisk-core-settings-seczones
+Source: oasterisk
+Version: 0.9.14-r754
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 32
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core-settings-security (>= 0.9.14-r754), oasterisk-core-seczones (>= 0.9.14-r1130)
+Section: web
+Priority: optional
+Description: OAS'tersik core package, security zones settings in security model full support

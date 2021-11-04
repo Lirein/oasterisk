@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if which a2dissite
+then
+ a2dissite oasterisk
+fi
+
+if which a2disconf
+then
+ a2disconf oasterisk-ports
+fi
+
+service apache2 restart

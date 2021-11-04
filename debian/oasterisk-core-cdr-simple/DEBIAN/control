@@ -1,0 +1,11 @@
+Package: oasterisk-core-cdr-simple
+Source: oasterisk
+Version: 0.9.14
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 24
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core (>= 0.9.14-r1264)
+Section: web
+Priority: optional
+Description: OAS'tersik core package, simple CDR view - only talk time display

@@ -1,0 +1,109 @@
+oasterisk (0.9.14) unstable; urgency=medium
+
+  * Завершение рефакторинга ядра на уровне моделей
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500
+
+oasterisk (0.9.13-r516) unstable; urgency=medium
+
+  Moving from flat to tree space development
+  Исправление добавления пользователей и групп по заявке 2003001
+
+ -- Ivan Batalin <director@oas.su>  Thu, 26 Mar 2020 10:13:54 +0500
+
+oasterisk (0.9.13-r395) unstable; urgency=medium
+
+  + Added seczones for dashboard panels
+  + Added filter to logged in users
+  * Jouurnal showing only current date by default
+  * Added check for empty entity id
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 Oct 2019 20:46:33 +0500
+
+oasterisk (0.9.13-r355) unstable; urgency=medium
+
+  * CDR views datetime pickers min/max date refresh fix
+  * CDR table cleanup fix
+
+ -- Ivan Batalin <director@oas.su>  Thu, 01 Aug 2019 07:38:46 +0500
+
+oasterisk (0.9.13-r354) unstable; urgency=medium
+
+  * Fix pincodes visibility
+  * Fixed confbridge list view in action
+  * Fixed call from group in list view
+  * Fixed AGI command processing on phantom asterisk Exec echo to stdout
+
+ -- Ivan Batalin <director@oas.su>  Wed, 31 Jul 2019 21:13:03 +0500
+
+oasterisk (0.9.13-r348) unstable; urgency=medium
+
+  + Added confbridge CDR support
+  * Fix sip ordering when save
+  * Fix confgroup deletion
+
+ -- Ivan Batalin <director@oas.su>  Mon, 29 Jul 2019 21:27:24 +0500
+
+oasterisk (0.9.13-r346) unstable; urgency=medium
+
+  + Tree widget unselect node event support
+  + Alternative group management multiple selection support
+  + Added table widget
+  + Added new CDR processor engine
+  + Added audio widget
+  * Weidgetset buttons fix
+  * Tree widget selections fix
+  * Tree widget checkbox appearence converted to bootswatch yeti style
+  * Some text fixes
+  * Fixed text and orphography
+  * Fixed license agreements
+  * Changed tree widget appearence
+  * CDR grouping widget
+  * Added altgroups tree multiple select and change support
+
+ -- Ivan Batalin <director@oas.su>  Thu, 25 Jul 2019 20:55:56 +0500
+
+oasterisk (0.9.13-r341) unstable; urgency=medium
+
+  + Added filter for seczone objects
+  + Added fantom templates declaration
+  + Added dialplan seczone for altgroup support
+  + Added case insensitive key/desc select widget search
+  * Fixed system extensions to nondtmf code
+  * Fixed saving dialplan objects
+  * Fixed right management settings
+
+ -- Ivan Batalin <director@oas.su>  Fri, 19 Jul 2019 15:06:34 +0500
+
+oasterisk (0.9.13-r336) unstable; urgency=medium
+
+  * Altgroup fix loading with partial zones
+
+ -- Ivan Batalin <director@oas.su>  Tue, 16 Jul 2019 19:45:18 +0500
+
+oasterisk (0.9.13-r334) unstable; urgency=medium
+
+  * Fixed standart groups on altrole 
+
+ -- Ivan Batalin <director@oas.su>  Tue, 16 Jul 2019 19:02:41 +0500
+
+oasterisk (0.9.13-r321) unstable; urgency=medium
+
+  + SIP Driver settings
+  + SIP Driver Security Settings
+  + Add pattern for unique id to match requrements
+  + Added default value to search select widget
+  * TODO: SIP Driver TLS transport settings
+  * Renamed menu entries
+  * Minor fixes in CSS - select2 widgetset
+  * Fixes in select2 initialisation code
+  * Fixed confbridge profile save/load
+  * Fixed codec overriding from general settings
+
+ -- Ivan Batalin <director@oas.su>  Sun, 14 Jul 2019 17:49:35 +0500
+
+oasterisk (0.9.13-1) unstable; urgency=medium
+
+  + Separated into dedicated module
+
+ -- Ivan Batalin <director@oas.su>  Sat, 06 Jul 2019 15:18:07 +0500

@@ -1,0 +1,3 @@
+./web/modules/core/views/settings/security/groups.php
+./web/modules/core/views/settings/security/users.php
+./web/modules/core/views/settings/security/acls.php

@@ -1,0 +1,622 @@
+oasterisk (0.9.14-r705) unstable; urgency=medium
+
+  Добавлена подсистема конфигурации настроек конференц комнат в адресной книге
+
+ -- Ivan Batalin <director@oas.su>  Mon, 11 May 2020 12:24:44 +0500
+
+oasterisk (0.9.14) unstable; urgency=medium
+
+  * Завершение рефакторинга ядра на уровне моделей
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500
+
+oasterisk (0.9.13-r517) unstable; urgency=medium
+
+  Исправлено редактирование групп конференц комнат по заявке 2003001, объем 1.5 часа
+  Исправление добавления пользователей и групп по заявке 2003001
+  Закрытие заявки 2003001, суммарный обьем 3 часа.
+
+ -- Ivan Batalin <director@oas.su>  Thu, 26 Mar 2020 10:13:54 +0500
+
+oasterisk (0.9.13-r422) unstable; urgency=medium
+
+  * Confbridge time fix
+
+ -- Ivan Batalin <director@oas.su>  Tue, 31 Dec 2019 07:59:39 +0500
+
+oasterisk (0.9.13-r420) unstable; urgency=medium
+
+  * Confbridge hangup external clients fix
+
+ -- Ivan Batalin <director@oas.su>  Sun, 24 Nov 2019 13:07:43 +0500
+
+oasterisk (0.9.13-r415) unstable; urgency=medium
+
+  * Mysql CDR DateTime Fix
+  * CDR Confbridge consolidation filter fix
+
+ -- Ivan Batalin <director@oas.su>  Sun, 17 Nov 2019 20:40:18 +0500
+
+oasterisk (0.9.13-r413) unstable; urgency=medium
+
+  Moving from flat to tree space development
+  + Confbridge agi caching
+  + Added talking status support for asterisk confbridge>=13.21 module
+
+ -- Ivan Batalin <director@oas.su>  Sun, 17 Nov 2019 09:20:35 +0500
+
+oasterisk (0.9.13-r401) unstable; urgency=medium
+
+  + Finished release schedule
+  + Confbridge stop button
+  + Added time synchronisation for confbridge rooms
+  + Added seczones for dashboard panels
+  + Added schedule view - empty notify hint
+  + Added schedule preview
+  + Added reset/soft reschedule dialog
+  + Added reschedule room button
+  + Added notification when trying to start manual only room
+  + Added min/max limits to datetime picker widget
+  + Added label widget
+  + Added filter to logged in users
+  + Added autoselect active conference room in room monitor
+  * Small hangup fix
+  * Schedule preview
+  * Retest CallerID for incoming calls room filter
+  * NoWait for stop confbridge button patch
+  * List appearence
+  * Improved hangup all/selected users in confbridge when all calls canceled handling
+  * Fix room start when it is planned
+  * Fixed submenu on grouped users in confbridge
+  * Fixed role title naming
+  * Fixed logins list - check all active sessions
+  * Fixed list widget text positioning
+  * Fixed confbridge schedule at midnight
+  * Fix confbridge hangup button
+  * Filter multiline support
+  * Confbridhe kick users rewrite - speedup to 40-60% of early version
+  * Confbridge parallel hangup
+  * Confbridge new hangup CDR approvement
+  * Changed hangup to all participants by two stages - collect info and send hangup event without wait for result
+  * CDR seczones filter fixup
+  * CDR added connected line for confbridge
+  * Added global regex support
+  * Added dynamic hint changes
+  * Added check for empty entity id
+  * Added adaptive columns in list widget
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 Oct 2019 20:46:33 +0500
+
+oasterisk (0.9.13-r365) unstable; urgency=medium
+
+  * Confbridge CDR filter fix
+
+ -- Ivan Batalin <director@oas.su>  Mon, 05 Aug 2019 14:43:52 +0500
+
+oasterisk (0.9.13-r364) unstable; urgency=medium
+
+  * CDR additional filters for confbridge
+
+ -- Ivan Batalin <director@oas.su>  Mon, 05 Aug 2019 09:17:21 +0500
+
+oasterisk (0.9.13-r363) unstable; urgency=medium
+
+  * Fix kicking users form confbridge
+
+ -- Ivan Batalin <director@oas.su>  Sun, 04 Aug 2019 23:13:39 +0500
+
+oasterisk (0.9.13-r362) unstable; urgency=medium
+
+  + Included core.js polyfill to support old browsers
+  + Added security dialing support to confbridge
+  + Added password show/hide button
+  + Added confbridge operator out of active room calling restriction
+  * Fixed CSS checkbox appearence in firefox
+  * Fixed confroom active detection with local timezone offset
+  * Fixed Confbridge spooler to real spool task - debug regression
+  * Fix confbridge settings disallowcallout description 
+  * DateTime widget supports setting different datetime ranges over current settings
+  * Confbridge kick all rewritten to single operation
+  * Confbridge GMT and local time scheduler fixed offset (missing call dates)
+  * Better support out of zerohour offset (eg from 22:00 to 03:00)
+  * Added UTF-8 meta tag to the main template for old browsers support
+  * Added UTF-8 hint to CSS file with utf-8 encodng for better windows browsers support
+  - Removed nonansweded s in AppDial2
+
+ -- Ivan Batalin <director@oas.su>  Sun, 04 Aug 2019 22:33:48 +0500
+
+oasterisk (0.9.13-r357) unstable; urgency=medium
+
+  * Objects altgroup zone saving fix
+  * Fixed CSS for tree widget checkbox
+
+ -- Ivan Batalin <director@oas.su>  Thu, 01 Aug 2019 22:58:21 +0500
+
+oasterisk (0.9.13-r356) unstable; urgency=medium
+
+  * Added DAHDI seczones support in altgroups
+
+ -- Ivan Batalin <director@oas.su>  Thu, 01 Aug 2019 11:29:16 +0500
+
+oasterisk (0.9.13-r354) unstable; urgency=medium
+
+  * Fix pincodes visibility
+  * Fixed confbridge list view in action
+  * Fixed call from group in list view
+  * Fixed AGI command processing on phantom asterisk Exec echo to stdout
+
+ -- Ivan Batalin <director@oas.su>  Wed, 31 Jul 2019 21:13:03 +0500
+
+oasterisk (0.9.13-r353) unstable; urgency=medium
+
+  * Confbridge config PIN visible
+
+ -- Ivan Batalin <director@oas.su>  Wed, 31 Jul 2019 06:43:53 +0500
+
+oasterisk (0.9.13-r352) unstable; urgency=medium
+
+  + Add failed calls from confbridge to CDR room logging and filter
+  * Fix similar confbride content with different rights
+  * Confbridge list for running rooms filter
+
+ -- Ivan Batalin <director@oas.su>  Tue, 30 Jul 2019 21:20:24 +0500
+
+oasterisk (0.9.13-r349) unstable; urgency=medium
+
+  * Default values changed for new confbridge participants
+  * Confbridge CDR cosmetics fix
+
+ -- Ivan Batalin <director@oas.su>  Tue, 30 Jul 2019 08:20:53 +0500
+
+oasterisk (0.9.13-r348) unstable; urgency=medium
+
+  + Added confbridge CDR support
+  * Fix sip ordering when save
+  * Fix confgroup deletion
+
+ -- Ivan Batalin <director@oas.su>  Mon, 29 Jul 2019 21:27:24 +0500
+
+oasterisk (0.9.13-r347) unstable; urgency=medium
+
+  + Added destination number from CDR
+  + Added CDR engine file
+  * SIP and confbridge module text and hints fixes.
+
+ -- Ivan Batalin <director@oas.su>  Fri, 26 Jul 2019 09:25:58 +0500
+
+oasterisk (0.9.13-r346) unstable; urgency=medium
+
+  + Tree widget unselect node event support
+  + Confbridges fixes
+  + Alternative group management multiple selection support
+  + Added table widget
+  + Added new CDR processor engine
+  + Added audio widget
+  * Weidgetset buttons fix
+  * Tree widget selections fix
+  * Tree widget checkbox appearence converted to bootswatch yeti style
+  * Some text fixes
+  * Fixed text and orphography
+  * Fixed license agreements
+  * Changed tree widget appearence
+  * CDR grouping widget
+  * Added altgroups tree multiple select and change support
+
+ -- Ivan Batalin <director@oas.su>  Thu, 25 Jul 2019 20:55:56 +0500
+
+oasterisk (0.9.13-r341) unstable; urgency=medium
+
+  + Added filter for seczone objects
+  + Added fantom templates declaration
+  + Added dialplan seczone for altgroup support
+  + Added case insensitive key/desc select widget search
+  * Fixed system extensions to nondtmf code
+  * Fixed saving dialplan objects
+  * Fixed right management settings
+
+ -- Ivan Batalin <director@oas.su>  Fri, 19 Jul 2019 15:06:34 +0500
+
+oasterisk (0.9.13-r337) unstable; urgency=medium
+
+  + Added tree widgetset events
+  + Added object exports on seczone capable views
+  + Added new group interface model
+  * Fixed modules register call engine
+
+ -- Ivan Batalin <director@oas.su>  Tue, 16 Jul 2019 12:47:25 +0500
+
+oasterisk (0.9.13-r322) unstable; urgency=medium
+
+  + SIP Driver settings
+  + SIP Driver Security Settings
+  + Add pattern for unique id to match requrements
+  + Added default value to search select widget
+  * TODO: SIP Driver TLS transport settings
+  * Renamed menu entries
+  * Minor fixes in CSS - select2 widgetset
+  * Minor design and major UI fixes
+  * Fixes in select2 initialisation code
+  * Fixed confbridge profile save/load
+  * Fixed codec overriding from general settings
+  * Added cyrillic support to uniqueid in confbridges
+  - Removed case insensitive pattern matching
+
+ -- Ivan Batalin <director@oas.su>  Sun, 14 Jul 2019 17:49:35 +0500
+
+oasterisk (0.9.13-1) unstable; urgency=medium
+
+  + Added security zones support
+  + Added widgetset engine
+  * Configuration modules has been partially rewrited to widgets
+
+ -- Ivan Batalin <director@oas.su>  Sat, 06 Jul 2019 15:18:07 +0500
+
+oasterisk (0.9.12-16) unstable; urgency=medium
+
+  * Fixed persistent room groups list
+
+ -- Ivan Batalin <director@oas.su>  Thu, 22 Nov 2018 13:07:13 +0500
+
+oasterisk (0.9.12-13) unstable; urgency=medium
+
+  * Confbridge settings and runtime fixes with rights management as operator, confroom admin
+  * Confbridge list appearence fix
+  * Confbridge submenu perchannel fix
+
+ -- Ivan Batalin <director@oas.su>  Sun, 30 Sep 2018 11:17:31 +0500
+
+oasterisk (0.9.12-10) unstable; urgency=medium
+
+  * Confbridge fix - Lock/Unlock button
+  
+ -- Ivan Batalin <director@oas.su>  Fri, 14 Sep 2018 17:12:53 +0500
+
+oasterisk (0.9.12-6) unstable; urgency=medium
+
+  + Confbridge group appearence, menu color fix
+
+ -- Ivan Batalin <director@oas.su>  Wed, 5 Sep 2018 15:32:17 +0500
+
+oasterisk (0.9.12-4) unstable; urgency=medium
+
+  + Confbridge invite user internal search
+
+ -- Ivan Batalin <director@oas.su>  Sat, 25 Aug 2018 09:50:39 +0500
+
+oasterisk (0.9.12-2) unstable; urgency=medium
+
+  * Fixes in confbridge CSS and user interaction.
+
+ -- Ivan Batalin <director@oas.su>  Sat, 29 Jul 2018 13:09:13 +0500
+
+oasterisk (0.9.11-5) unstable; urgency=medium
+
+  * CSS fixes
+  * Confbridge list view fixes
+
+ -- Ivan Batalin <director@oas.su>  Tue, 24 Jul 2018 15:04:23 +0500
+
+oasterisk (0.9.11-4) unstable; urgency=medium
+
+  * CSS fixes
+  * Recording button fix
+
+ -- Ivan Batalin <director@oas.su>  Mon, 23 Jul 2018 10:27:54 +0500
+
+oasterisk (0.9.11-3) unstable; urgency=medium
+
+  * Rights subsystem fixes                                   
+
+ -- Ivan Batalin <director@oas.su>  Thu, 19 Jul 2018 18:37:18 +0500
+
+oasterisk (0.9.10-8) stable; urgency=medium
+
+  * CSS Fixes
+
+ -- Ivan Batalin <director@oas.su>  Tue, 10 Jul 2018 16:57:18 +0500
+
+oasterisk (0.9.10-7) unstable; urgency=medium
+
+  * Role based access visual interface interaction
+
+ -- Ivan Batalin <director@oas.su>  Mon, 9 Jul 2018 18:04:12 +0500
+
+oasterisk (0.9.10-6) unstable; urgency=medium
+
+  * Fixes CSS
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 May 2018 22:01:02 +0500
+
+oasterisk (0.9.10-5) unstable; urgency=medium
+
+  * Fixes
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 May 2018 12:26:12 +0500
+
+oasterisk (0.9.10-3) unstable; urgency=medium
+
+  * Confbridge mobile devices support
+  * Confbridge list view redesign
+
+ -- Ivan Batalin <director@oas.su>  Mon, 2 Apr 2018 09:05:31 +0500
+
+oasterisk (0.9.10-2) stable; urgency=medium
+
+  * Fixed confbridge CDR filter
+  * Added correct info in CDR on failure
+  * Fixed mass kick/hangup
+
+ -- Ivan Batalin <director@oas.su>  Thu, 22 Mar 2018 11:22:31 +0500
+
+oasterisk (0.9.10-1) unstable; urgency=medium
+
+  * Visual appearence redesign
+  * Mobile browser support
+  * Touchscreens support
+
+ -- Ivan Batalin <director@oas.su>  Wed, 7 Mar 2018 10:28:13 +0500
+
+oasterisk (0.9.9-6) unstable; urgency=medium
+
+  * Confbridge dialplan fixes
+
+ -- Ivan Batalin <director@oas.su>  Wed, 28 Feb 2018 22:13:42 +0500
+
+oasterisk (0.9.9-5) stable; urgency=medium
+
+  * Confbridge dialing fixes
+  * Confbridge incoming calls out of UTC start of the day interval
+  * Confbridge scheduler activation between UTC start of the day interval
+
+ -- Ivan Batalin <director@oas.su>  Fri, 9 Feb 2018 11:46:34 +0500
+
+oasterisk (0.9.9-4) stable; urgency=medium
+
+  * Confbridge AGI engine
+
+ -- Ivan Batalin <director@oas.su>  Mon, 29 Jan 2018 06:44:13 +0500
+
+oasterisk (0.9.9-3) stable; urgency=medium
+
+  * Render speedup
+  * Bulk operations support
+  * Custom profiles on invite
+
+ -- Ivan Batalin <director@oas.su>  Fri, 26 Jan 2018 17:14:35 +0500
+
+oasterisk (0.9.9-2) stable; urgency=medium
+
+  * Major fixes in appearence and groups
+
+ -- Ivan Batalin <director@oas.su>  Thu, 23 Nov 2017 10:36:27 +0500
+
+oasterisk (0.9.9-1) unstable; urgency=medium
+
+  * Added sub-group features
+
+ -- Ivan Batalin <director@oas.su>  Sun, 19 Nov 2017 14:14:14 +0500
+
+oasterisk (0.9.8-28) unstable; urgency=medium
+
+  * Fixes by testing sheet #3 at 13.11.2017
+
+ -- Ivan Batalin <director@oas.su>  Thu, 16 Nov 2017 08:18:21 +0500
+
+oasterisk (0.9.8-27) stable; urgency=medium
+
+  * Appearence change
+  * Room profile fixes
+  * Event log fixes
+  * Dahdi number type fixes
+  * Support for custom outgoing dial timing
+
+ -- Ivan Batalin <director@oas.su>  Thu, 9 Nov 2017 21:41:24 +0500
+
+oasterisk (0.9.8-26) stable; urgency=medium
+
+  * Temporary rooms fix
+  * User profile save fix
+
+ -- Ivan Batalin <director@oas.su>  Mon, 6 Nov 2017 23:59:53 +0500
+
+oasterisk (0.9.8-25) stable; urgency=medium
+
+  * CDR SCV Export
+
+ -- Ivan Batalin <director@oas.su>  Mon, 6 Nov 2017 22:29:53 +0500
+
+oasterisk (0.9.8-24) stable; urgency=medium
+
+  * Small cards with context menu
+
+ -- Ivan Batalin <director@oas.su>  Mon, 6 Nov 2017 17:23:25 +0500
+
+oasterisk (0.9.8-23) stable; urgency=medium
+
+  * Added extended actions processing
+
+ -- Ivan Batalin <director@oas.su>  Sun, 5 Nov 2017 23:16:25 +0500
+
+oasterisk (0.9.8-22) stable; urgency=medium
+
+  * Changed dialogbox buttons in UI
+
+ -- Ivan Batalin <director@oas.su>  Sat, 4 Nov 2017 13:05:15 +0500
+
+oasterisk (0.9.8-21) stable; urgency=medium
+
+  * Added same profile id control
+  * Separate persistent rooms and room profiles
+
+ -- Ivan Batalin <director@oas.su>  Sat, 4 Nov 2017 12:37:25 +0500
+
+oasterisk (0.9.8-20) stable; urgency=medium
+
+  * persistent room profile selector fix
+
+ -- Ivan Batalin <director@oas.su>  Sat, 4 Nov 2017 10:25:25 +0500
+
+oasterisk (0.9.8-19) stable; urgency=medium
+
+  * DAHDI multiport grouping
+  * DAHDI card aggregation fix
+  * Confbridge ordering by name
+  * Card/List ordering by name
+
+ -- Ivan Batalin <director@oas.su>  Sat, 4 Nov 2017 06:41:25 +0500
+
+oasterisk (0.9.8-18) stable; urgency=medium
+
+  * Added cdr pure Hangup processing
+
+ -- Ivan Batalin <director@oas.su>  Thu, 2 Nov 2017 09:47:03 +0500
+
+oasterisk (0.9.8-14) stable; urgency=medium
+
+  * Fixed scheduler
+
+ -- Ivan Batalin <director@oas.su>  Tue, 31 Oct 2017 08:59:12 +0500
+
+oasterisk (0.9.8-13) stable; urgency=medium
+
+  * Added flex user card style
+  * Fixed user custom sound profile
+
+ -- Ivan Batalin <director@oas.su>  Mon, 30 Oct 2017 21:51:16 +0500
+
+oasterisk (0.9.8-12) stable; urgency=medium
+
+  * Changed merge mechanism, needs SafeLeave manager function
+  * Fixed sheduled call cancell when conference has started before schedule
+
+ -- Ivan Batalin <director@oas.su>  Mon, 30 Oct 2017 09:46:32 +0500
+
+oasterisk (0.9.8-11) stable; urgency=medium
+
+  * Fixed profile saving without value or with zero value
+
+ -- Ivan Batalin <director@oas.su>  Fri, 20 Oct 2017 13:33:28 +0500
+
+oasterisk (0.9.8-9) stable; urgency=medium
+
+  * Fixed outgoing call file
+
+ -- Ivan Batalin <director@oas.su>  Wed, 18 Oct 2017 13:47:28 +0500
+
+oasterisk (0.9.8-8) stable; urgency=medium
+
+  * Added offline users selection
+  * Added mass call selected users only
+  * Added suid bit calling subscription feature from asterisk user
+  * Changed icons and button colors
+  * Fixed group aggeregation on list view
+  * Added incoming/outgoing state in CDR detection
+
+ -- Ivan Batalin <director@oas.su>  Mon, 16 Oct 2017 13:47:28 +0500
+
+oasterisk (0.9.8-7) stable; urgency=medium
+
+  * Added CDR filter to support netsed bridges and joins
+  * Added support of profile edit with creating, removing and copy feature
+  * Added support for mixmon record after call end
+  * Fixed confbridge dashboard for nested joins
+
+ -- Ivan Batalin <director@oas.su>  Mon, 9 Oct 2017 10:21:53 +0500
+
+oasterisk (0.9.8-6) unstable; urgency=medium
+
+  * User profile saving
+  * Menu saving fixes
+  * Some CSS approvements
+
+ -- Ivan Batalin <director@oas.su>  Thu, 5 Oct 2017 23:09:21 +0500
+
+oasterisk (0.9.8-5) unstable; urgency=medium
+
+  * Menu saving
+  * Select dialog fixes
+  * Sounds listing autodetect
+  * Added support of subrecords
+
+ -- Ivan Batalin <director@oas.su>  Tue, 5 Oct 2017 00:57:23 +0500
+
+oasterisk (0.9.8-4) stable; urgency=medium
+
+  * Fixed E1 room aggregation
+  * Changed cancell and dismiss buttons to red (danger) color
+
+ -- Ivan Batalin <director@oas.su>  Tue, 3 Oct 2017 21:26:39 +0500
+
+oasterisk (0.9.8-3) stable; urgency=medium
+
+  * Released dismiss buttons on dial and scheduled call
+  * Hide invite dialog before sending invite event
+
+ -- Ivan Batalin <director@oas.su>  Mon, 2 Oct 2017 22:21:35 +0500
+
+oasterisk (0.9.8-2) unstable; urgency=medium
+
+  * Fixed markup generation for groups
+
+ -- Ivan Batalin <director@oas.su>  Mon, 2 Oct 2017 07:45:27 +0500
+
+oasterisk (0.9.8-1) unstable; urgency=medium
+
+  * Added cards view
+  * Added interactive events update
+  * Added hold and talking status
+  * Added isolation
+  * Added Channel merging (subgrouping)
+  * Added DAHDI Type Of Number
+
+ -- Ivan Batalin <director@oas.su>  Sun, 1 Oct 2017 23:57:14 +0500
+
+oasterisk (0.9.7-5) unstable; urgency=medium
+
+  * Added caller id support
+
+ -- Ivan Batalin <director@oas.su>  Wed, 27 Sep 2017 13:27:34 +0500
+
+oasterisk (0.9.7-4) stable; urgency=medium
+
+  * Directed to another days separator due to asterisk 13
+
+ -- Ivan Batalin <director@oas.su>  Tue, 26 Sep 2017 21:16:12 +0500
+
+oasterisk (0.9.7-3) unstable; urgency=medium
+
+  * Added scheduler
+
+ -- Ivan Batalin <director@oas.su>  Tue, 26 Sep 2017 19:38:11 +0500
+
+oasterisk (0.9.7-2) unstable; urgency=medium
+
+  * Fixes in rooms
+
+ -- Ivan Batalin <director@oas.su>  Tue, 26 Sep 2017 10:32:21 +0500
+
+oasterisk (0.9.7-1) unstable; urgency=medium
+
+  * Added persistent rooms
+  * Added manual calling
+
+ -- Ivan Batalin <director@oas.su>  Tue, 26 Sep 2017 09:41:25 +0500
+
+oasterisk (0.9.6-2) stable; urgency=medium
+
+  * Added license agreement    
+  * Fixed multiple HDD license CSR creation (PHP5 related bug)
+
+ -- Ivan Batalin <director@oas.su>  Thu, 31 Aug 2017 17:25:18 +0500
+
+oasterisk (0.9.5-3) unstable; urgency=medium
+
+  * Fixed room display for multiple channels
+
+ -- Ivan Batalin <director@oas.su>  Fri, 18 Aug 2017 20:20:31 +0500
+
+oasterisk (0.9.5-1) stable; urgency=medium
+
+  * First packaged version
+
+ -- Ivan Batalin <director@oas.su>  Wed, 16 Aug 2017 17:59:39 +0500

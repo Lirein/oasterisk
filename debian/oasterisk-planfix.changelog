@@ -1,0 +1,37 @@
+oasterisk (0.9.14) unstable; urgency=medium
+
+  * Завершение рефакторинга ядра на уровне моделей
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500
+
+oasterisk (0.9.12-r427) unstable; urgency=medium
+
+  Mainline planfix update
+
+ -- Ivan Batalin <director@oas.su>  Thu, 26 Mar 2020 10:13:54 +0500
+
+oasterisk (0.9.12-r411) unstable; urgency=medium
+
+  Moving from flat to tree space development
+  + AutoAnswer for CRM calls
+  * Planfix integration missed calls fix
+
+ -- Ivan Batalin <director@oas.su>  Tue, 29 Oct 2019 20:46:33 +0500
+
+oasterisk (0.9.12-12) unstable; urgency=medium
+
+  * Planfix release full
+
+ -- Ivan Batalin <director@oas.su>  Sat, 15 Sep 2018 12:12:27 +0500
+
+oasterisk (0.9.12-11) unstable; urgency=medium
+
+  * Planfix release
+
+ -- Ivan Batalin <director@oas.su>  Sat, 15 Sep 2018 10:41:21 +0500
+
+oasterisk (0.9.12-8) unstable; urgency=medium
+
+  + Planfix module beta
+
+ -- Ivan Batalin <director@oas.su>  Tue, 11 Sep 2018 06:54:12 +0500

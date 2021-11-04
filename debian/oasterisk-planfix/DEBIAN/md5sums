@@ -1,0 +1,7 @@
+a2eef9a8f82ddbac70df6dc395056b45  usr/bin/ast2mp3
+6724f7cbf92e741275a79b01d62715dc  usr/share/doc/oasterisk-planfix/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-planfix/copyright
+a4c88cf7a8ea34f7330d5c6b25a9b9cb  var/www/oasterisk/web/modules/ext_planfix/integration.php
+d7040eda2d760356411af705d66a5a9a  var/www/oasterisk/web/modules/ext_planfix/license.php
+d2aeb7689b73794d7a1ef33d36e5b5a5  var/www/oasterisk/web/modules/ext_planfix/version
+f090db06370deee4660b587809879b73  var/www/oasterisk/web/modules/ext_planfix/views/planfix.php

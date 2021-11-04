@@ -1,0 +1,12 @@
+Package: oasterisk-core-settings-security
+Source: oasterisk
+Version: 0.9.14-r754
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 71
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core (>= 0.9.14-r1264)
+Suggests: oasterisk-core-settings-seczones
+Section: web
+Priority: optional
+Description: OAS'tersik core package, manager security with groups and scope support settings

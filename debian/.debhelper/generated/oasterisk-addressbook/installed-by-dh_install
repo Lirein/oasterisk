@@ -1,0 +1,7 @@
+./web/modules/addressbook/addressbook.php
+./web/modules/addressbook/agreement.html
+./web/modules/addressbook/license.php
+./web/modules/addressbook/peer.php
+./web/modules/addressbook/version
+./web/modules/addressbook/views
+./web/modules/addressbook/zone.php

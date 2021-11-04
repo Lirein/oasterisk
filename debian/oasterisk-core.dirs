@@ -1,0 +1,15 @@
+/var/www/oasterisk/licensing
+/var/www/oasterisk/backups
+/var/www/oasterisk/asterisk
+/var/www/oasterisk/html
+/var/www/oasterisk/web
+/var/www/oasterisk/web/modules
+/var/www/oasterisk/web/modules/core
+/var/www/oasterisk/web/modules/core/cdr
+/var/www/oasterisk/web/modules/core/codec
+/var/www/oasterisk/web/modules/core/dashboard
+/var/www/oasterisk/web/modules/core/dialplan
+/var/www/oasterisk/web/modules/core/security
+/var/www/oasterisk/web/modules/core/sounds
+/var/www/oasterisk/web/modules/core/views
+/etc/ssl/crl

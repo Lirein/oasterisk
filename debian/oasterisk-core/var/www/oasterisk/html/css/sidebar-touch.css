@@ -1,0 +1,21 @@
+.sidebar.sidebar-right.toggled:hover {
+    min-width: 3rem;
+    max-width: 3rem;
+}
+
+.sidebar.sidebar-right.toggled:hover ul li a span {
+    display: none;
+}
+
+.sidebar.sidebar-right.toggled:hover > .container > .list-unstyled-bottom li {
+    display: none;
+}
+
+.sidebar.sidebar-right.toggled:hover > .container > .list-unstyled-bottom li:first-child {
+    display: inline-block;
+}
+
+.sidebar.sidebar-right:hover > .container > .list-unstyled:not(.list-unstyled-bottom) li a i, .sidebar.sidebar-right:not(.toggled) > .container > .list-unstyled:not(.list-unstyled-bottom) li a i {
+    display: inline-block;
+}
+

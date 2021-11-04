@@ -1,0 +1,3 @@
+#!/bin/sh
+
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/general/modules.php

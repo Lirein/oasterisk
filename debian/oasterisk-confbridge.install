@@ -1,0 +1,2 @@
+web/modules/confbridge/* /var/www/oasterisk/web/modules/confbridge/
+web/modules/confbridge/.call* /var/www/oasterisk/web/modules/confbridge/

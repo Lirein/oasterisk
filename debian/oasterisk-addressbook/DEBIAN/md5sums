@@ -1,0 +1,8 @@
+86bd102fcc4ba80d3eb61b23658b603d  usr/share/doc/oasterisk-addressbook/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-addressbook/copyright
+82c359528dc80f187b47775f30f24c51  var/www/oasterisk/web/modules/addressbook/addressbook.php
+88e3c604dd23584e0a3cf7cc23d92212  var/www/oasterisk/web/modules/addressbook/license.php
+7514c0a140be313ca588611b2c5b04c8  var/www/oasterisk/web/modules/addressbook/peer.php
+03657b138fe387822b84491d07e1be96  var/www/oasterisk/web/modules/addressbook/version
+fc12c89841641abf95ee062e54693634  var/www/oasterisk/web/modules/addressbook/views/settings/addressbook.php
+2cdc0dd8835d29ac5efcb43d2c09c6f9  var/www/oasterisk/web/modules/addressbook/zone.php

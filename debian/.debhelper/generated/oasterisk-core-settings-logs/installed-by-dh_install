@@ -1,0 +1,3 @@
+./web/modules/core/views/settings/logs/cdr.php
+./web/modules/core/views/settings/logs/syslog.php
+./web/modules/core/views/settings/logs/version

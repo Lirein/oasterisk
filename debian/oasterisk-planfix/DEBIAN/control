@@ -1,0 +1,11 @@
+Package: oasterisk-planfix
+Source: oasterisk
+Version: 0.9.14
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 90
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core-settings-generic, lame
+Section: web
+Priority: optional
+Description: OAS'tersik PlanFix integration

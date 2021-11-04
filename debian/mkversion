@@ -1,0 +1,107 @@
+#!/bin/sh
+dir=$(dirname $0)
+find "$dir/.." -name version -exec rm {} \;
+debrevision=$(svn info --show-item last-changed-revision "$dir/changelog")
+
+urgency=medium
+revtype=unstable
+dt=$(date -R)
+author="Ivan Batalin <director@oas.su>"
+
+lastversion=$(head -n1 "$dir/changelog")
+debversion=$(echo "$lastversion" | sed -E 's/^.*\((.*)\).*$/\1/')
+debbuild=$(echo "$debversion" | sed -E 's/^.*-(.*)$/\1/')
+lastrevision=$(echo "$debbuild" | sed -E 's/^r(.*)$/\1/')
+if [ "$debversion" = "$lastrevision" ]
+then
+  lastrevision=
+fi
+debversion=$(echo "$debversion" | sed -E 's/^(.*)-.*$/\1/')
+
+currentrevision=$(svn info --show-item last-changed-revision "$dir/..")
+
+minrevision=$debrevision
+
+if [ -n "$lastrevision" ]
+then
+  if [ $lastrevision -gt $debrevision ]
+  then
+    minrevision=$lastrevision
+  fi
+fi
+
+if [ $currentrevision -gt $minrevision ]
+then
+  changes=$(svn log -r$minrevision:$currentrevision --incremental "$dir/../$path" | sed -E '/^(-+|r[0-9]+ .*|)$/d;s/^(.*)$/  \1/' | sort -r -k 1.3,1.3)
+  printf "%s (%s-r%s) %s; urgency=%s\n\n%s\n\n -- %s  %s\n\n" "oasterisk" "$debversion" "$currentrevision" "$revtype" "$urgency" "$changes" "$author" "$dt" > "$dir/changelog-new"
+  cat "$dir/changelog" >> "$dir/changelog-new"
+  rm "$dir/changelog"
+  mv "$dir/changelog-new" "$dir/changelog"
+fi
+
+ls -1 $dir/*.install | while read pkg
+do
+  pkgcfg=$(echo $pkg | sed -e 's/.install//')
+  pkgname=$(basename $pkgcfg)
+  lastversion=$(head -n1 "$pkgcfg.changelog")
+  pkgversion=$(echo "$lastversion" | sed -E 's/^.*\((.*)\).*$/\1/')
+  pkgbuild=$(echo "$pkgversion" | sed -E 's/^.*-(.*)$/\1/')
+  pkgrevision=$(echo "$pkgbuild" | sed -E 's/^r(.*)$/\1/')
+  if [ "$pkgversion" = "$pkgrevision" ]
+  then
+    pkgrevision=
+  fi
+  pkgversion=$(echo "$pkgversion" | sed -E 's/^(.*)-.*$/\1/')
+  path=$(dirname "$(grep "/modules/" "$pkg" | head -n 1 | sed -E 's/^(".*"|.*)\s.*$/\1/;s/"//g')")
+  verfilepath=$path/version
+  revpath=$path
+  maxrevision=$(svn info --show-item last-changed-revision "$dir/../$path")
+#  echo search revision for $pkgname - current is $maxrevision
+  tmpfile=$(tempfile)
+  cat "$pkg" | sed -E 's/^(".*"|.*)\s.*$/\1/;s/"//g' > "$tmpfile"
+  while read path
+  do
+    if echo "$path" | grep '*' > /dev/null 2>&1
+    then
+      path=$(dirname "$path")
+    fi
+    revision=$(svn info --show-item last-changed-revision "$dir/../$path")
+#    echo Revision $revision for path $path
+    if [ -n "$revision" ]
+    then
+      if [ $revision -gt $maxrevision ]
+      then
+        revpath=$path
+        maxrevision=$revision
+#        echo Set revision path to $path rev $maxrevision
+      fi
+    fi
+  done < "$tmpfile"
+  rm "$tmpfile"
+
+  if [ ! -f "$dir/../$verfilepath" ]
+  then
+    echo $pkgname-$pkgversion~r$maxrevision > "$dir/../$verfilepath"
+  fi
+
+  minrevision=$debrevision
+
+  if [ -n "$pkgrevision" ]
+  then
+    if [ $pkgrevision -gt $debrevision ]
+    then
+      minrevision=$pkgrevision
+    fi
+  fi
+
+#  echo Check last revision $minrevision \< new revision $maxrevision
+  if [ $maxrevision -gt $minrevision ]
+  then
+    echo Generate config $pkgname last revision $minrevision new revision $maxrevision
+    changes=$(svn log -r$(($minrevision+1)):$maxrevision --incremental "$dir/../$revpath" | sed -E '/^(-+|r[0-9]+ .*|)$/d;s/^(.*)$/  \1/' | sort -r -k 1.3,1.3)
+    printf "%s (%s-r%s) %s; urgency=%s\n\n%s\n\n -- %s  %s\n\n" "oasterisk" "$pkgversion" "$maxrevision" "$revtype" "$urgency" "$changes" "$author" "$dt" >> "$pkgcfg.changelog-new"
+    cat "$pkgcfg.changelog" >> "$pkgcfg.changelog-new"
+    rm "$pkgcfg.changelog"
+    mv "$pkgcfg.changelog-new" "$pkgcfg.changelog"
+  fi
+done

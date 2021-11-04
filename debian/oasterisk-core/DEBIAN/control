@@ -1,0 +1,14 @@
+Package: oasterisk-core
+Source: oasterisk
+Version: 0.9.14-r1264
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 6169
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: asterisk, udev, ssl-cert, apache2, libapache2-mod-php, php-sqlite3, php-zip, php-xml, memcached, php-memcached | php7.0-memcached | php7.2-memcached, php-mbstring, php-mysql | php7.0-mysql | php7.0-mariadb
+Recommends: oasterisk-core-settings-generic, oasterisk-core-settings-backup, oasterisk-core-settings-codecs, oasterisk-core-settings-dialplan, oasterisk-core-settings-modules, oasterisk-core-settings-altsecurity, oasterisk-core-cdr-generic, oasterisk-core-runtime-dashboard
+Suggests: oasterisk-sip, oasterisk-core-cdr-simple, oasterisk-core-runtime-modules
+Conflicts: asterisknow, elastics, freepbx
+Section: web
+Priority: optional
+Description: OAS'tersik core package, provides basic telephony controller features

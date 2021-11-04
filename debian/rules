@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+tempfile:=$(shell tempfile)
+
+override_dh_clean:
+	dh_clean
+	debian/mkversion
+
+override_dh_gencontrol:
+	debian/mksubst
+	dh_gencontrol $@ -- -Tdebian/substvars 2>$(tempfile)
+	grep -v ":Version}" $(tempfile) | cat >&2
+	rm $(tempfile)
+
+override_dh_builddeb:
+	dh_builddeb -- -Zgzip
+
+%:
+	dh $@

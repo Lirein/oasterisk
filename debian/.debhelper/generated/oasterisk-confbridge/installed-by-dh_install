@@ -1,0 +1,11 @@
+./web/modules/confbridge/agreement.html
+./web/modules/confbridge/cdr
+./web/modules/confbridge/ConfbridgeProperty.php
+./web/modules/confbridge/dashboard
+./web/modules/confbridge/functions.php
+./web/modules/confbridge/license.php
+./web/modules/confbridge/security
+./web/modules/confbridge/version
+./web/modules/confbridge/views
+./web/modules/confbridge/.call.c
+./web/modules/confbridge/.call.php

@@ -1,0 +1,4 @@
+d03d033fc5a290772943e57c470bb294  usr/share/doc/oasterisk-core-settings-dialplan/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-core-settings-dialplan/copyright
+7dedb82d434d15391e3fd5d52c0abcc1  var/www/oasterisk/web/modules/core/views/settings/dialplan/dialplan.php
+67e852a7802de2b19b68e08b71cafae0  var/www/oasterisk/web/modules/core/views/settings/dialplan/version

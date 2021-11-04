@@ -1,0 +1,9 @@
+4d85a0ea27f520d1bdafeb123acf4f3b  usr/share/doc/oasterisk-sip/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-sip/copyright
+326588f58d50383118996fb886ae5a52  var/www/oasterisk/web/modules/chan_sip/peers.php
+d8f38b5829eb0e9c3065e929b47ab1c5  var/www/oasterisk/web/modules/chan_sip/trunks.php
+d74ff46f087a22fa6ce166f0e782fa5a  var/www/oasterisk/web/modules/chan_sip/version
+127570d0a5b0fb946d868d78e32aa0bf  var/www/oasterisk/web/modules/chan_sip/views/driver.php
+3dca01e55ad33eafd1050ba71f2f01d7  var/www/oasterisk/web/modules/chan_sip/views/peers.php
+ef4c35ef4f9f43427ca2d78204511a98  var/www/oasterisk/web/modules/chan_sip/views/trunks.php
+d42bd9a1fa6ab173f9ec7753bf7e1707  var/www/oasterisk/web/modules/chan_sip/zone.php

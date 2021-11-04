@@ -1,0 +1,492 @@
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-text {
+    color: rgba(255, 255, 255, .75);
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--table-dark-hover);
+}
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px .75rem var(--shadow-dark);
+    background-color: var(--table-light-head);
+}
+
+.sidebar-right {
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px .75rem var(--shadow-dark);
+    background-color: var(--table-light-head);
+}
+
+.sidebar-right.disabled {
+    display: none;
+}
+
+.sidebar > .container {
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.sidebar ul li {
+    white-space: nowrap;
+}
+.sidebar ul li a {
+    display: block;
+    padding: .5rem 1rem .55rem 0.5rem;
+    color: var(--dark-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+.sidebar ul li a:hover {
+    color: var(--white);
+    background: var(--shadow-dark-focus);
+}
+
+.sidebar ul li.active > a {
+    color: var(--white);
+    background: var(--shadow-dark-focus);
+}
+
+.sidebar ul ul li {
+    margin-left: 1rem;
+}
+
+.sidebar ul ul li a {
+    color: var(--dark-text);
+}
+
+.sidebar ul ul a {
+    background: var(--shadow-dark);
+}
+
+.sidebar ul li a i.oi, .navbar ul li a i.oi {
+    width: 2rem;
+    text-align: center;
+}
+
+.sidebar [data-toggle="collapse"] {
+    position: relative;
+}
+
+.sidebar.sidebar-right [data-toggle="collapse"] {
+    padding: .5rem 1rem .55rem 1rem;
+}
+
+.sidebar [data-toggle="collapse"]:before {
+    content: "\e036";
+    font-family: 'Icons';
+    position: absolute;
+    right: 0.1rem;
+    top: calc(100% - 1.75rem);
+    font-size: 0.6rem;
+    transition: transform 0.3s;
+}
+
+.sidebar.sidebar-right [data-toggle="collapse"]:before {
+    content: "\e034";
+    right: auto;
+    left: 0.1rem;
+    transform: rotate(90deg);
+}
+
+.sidebar [aria-expanded="true"] {
+    color: var(--white);
+    background: var(--shadow-dark);
+}
+
+.sidebar [aria-expanded="true"]:before {
+    transform: rotate(90deg);
+}
+
+.sidebar.sidebar-right [aria-expanded="true"]:before {
+    transform: rotate(0deg);
+}
+
+.sidebar.toggled {
+    min-width: 3rem;
+    max-width: 3rem;
+}
+.sidebar.toggled ul li a span {
+    display: none;
+}
+
+.sidebar.toggled.active ul li a span {
+    display: inline;
+}
+
+.content {
+    width: 100%;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.sidebar.collapse {
+    display: block;
+}
+
+.sidebar > .container > .list-unstyled {
+    height: calc(100% - 2.7rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    direction: rtl;
+    padding-right: 0;
+}
+
+.sidebar > .container > .list-unstyled > li {
+    direction: ltr;
+}
+
+.sidebar > .container > .list-unstyled-bottom {
+    position: absolute;
+    overflow-y: none;
+    height: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: var(--table-dark-head) solid 1px;
+    box-shadow: 0px 0px .25rem var(--shadow-dark-btn);
+}
+
+.sidebar > .container > .list-unstyled-bottom li {
+    width: 100%;
+}
+
+.sidebar.sidebar-right.toggled:hover {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.sidebar.sidebar-right.toggled:hover ul li a span {
+    display: inline;
+}
+
+
+.sidebar.sidebar-right > .container > .list-unstyled {
+    direction: ltr;
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom {
+    height: 2.5rem;
+    border-top: 0px;
+    overflow: hidden;
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom li {
+    width: 3rem;
+}
+
+.sidebar.sidebar-right.toggled > .container > .list-unstyled-bottom li {
+    display: none;
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom li:first-child {
+    display: block;
+    width: calc(100% - 6rem);
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom li.onebtn:first-child {
+    display: block;
+    width: calc(100% - 3rem);
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom li.nobtn:first-child {
+    display: block;
+    width: calc(100%);
+}
+
+.sidebar.sidebar-right.toggled:hover > .container > .list-unstyled-bottom li {
+    display: block;
+}
+
+.sidebar > .container > .list-unstyled-bottom li:first-child a span::after {
+    content: ' Свернуть';
+}
+
+.sidebar.toggled > .container > .list-unstyled-bottom li:first-child a span::after {
+    content: ' Развернуть';
+}
+
+.sidebar > .container > .list-unstyled-bottom li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sidebar.sidebar-right > .container > .list-unstyled-bottom li.disabled {
+    display: none !important;
+}
+
+.sidebar + div {
+    padding-left: 250px;
+    transition: padding 0.3s;
+}
+
+.sidebar.toggled + div {
+    padding-left: 3rem;
+}
+
+.sidebar.toggled.active {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.sidebar + div.sb-right {
+    padding-right: 250px;
+}
+
+.sidebar + div.sb-right.toggled {
+    padding-right: 3rem;
+}
+
+.sidebar a {
+    position: relative;
+}
+
+.sidebar a > span {
+    display: inline;
+}
+
+.sidebar .badge.right {
+    font-size: 0.6rem;
+    position: absolute;
+    display: inline-block;
+    top: 0.3rem;
+    right: 0.5rem;
+}
+
+.sidebar.sidebar-right:hover > .container > .list-unstyled:not(.list-unstyled-bottom) li a i, .sidebar.sidebar-right:not(.toggled) > .container > .list-unstyled:not(.list-unstyled-bottom) li a i {
+    display: none;
+}
+
+button.sb-addbtn {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    border: none;
+    color: var(--white);
+    line-height: 2rem;
+    top: auto;
+    left: auto;
+    right: 4rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px .25rem var(--shadow-success-btn);
+    transition: box-shadow 0.3s;
+}
+
+button.sb-addbtn:hover {
+    box-shadow: 0px 0px .5rem var(--shadow-success-focus);
+}
+
+button.sb-delbtn {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    border: none;
+    color: var(--white);
+    line-height: 2rem;
+    top: auto;
+    left: auto;
+    right: 8rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px .25rem var(--shadow-danger-btn);
+    transition: box-shadow 0.3s;
+}
+
+button.sb-delbtn:hover {
+    box-shadow: 0px 0px .5rem var(--shadow-danger-focus);
+}
+
+button.sb-delbtn.onebtn {
+    right: 4rem;
+}
+
+button.sb-delbtn.singlebtn {
+    right: 5rem;
+    display: inline-block;
+}
+
+button.sb-applybtn {
+    position: fixed;
+    z-index: 10;
+    display: block;
+    border: none;
+    color: var(--white);
+    line-height: 2rem;
+    top: auto;
+    left: auto;
+    right: calc(250px + 1rem);
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px .25rem var(--shadow-success-btn);
+    transition: box-shadow,right 0.3s;
+}
+
+button.sb-addbtn.toggled + button.sb-applybtn {
+    right: 12rem;
+}
+
+button.sb-delbtn.disabled.toggled ~ button.sb-applybtn, button.sb-addbtn.disabled.toggled + button.sb-applybtn {
+    right: 8rem;
+}
+
+button.sb-delbtn.disabled.toggled + button.sb-addbtn.disabled.toggled + button.sb-applybtn {
+    right: 4rem;
+}
+
+button.sb-applybtn:hover {
+    box-shadow: 0px 0px .5rem var(--shadow-success-focus);
+}
+
+button.sb-addbtn.toggled, button.sb-delbtn.toggled {
+    display: block;
+}
+
+button.sb-addbtn.disabled, button.sb-applybtn.disabled, button.sb-delbtn.disabled {
+    display: none;
+}
+
+.sidebar.sidebar-right.disabled ~ button.sb-applybtn {
+    right: 1rem !important;
+}
+
+@media (max-width: 576px) {
+    .sidebar + div, .sidebar.toggled + div {
+       padding-left: 0;
+    }
+
+    .sidebar > .container > .list-unstyled {
+        height: 100%
+    }
+
+    .sidebar {
+        margin-left: -250px;
+        margin-right: 0;
+        box-shadow: none;
+    }
+    .sidebar.collapse {
+        margin-top: -250px;
+    }
+    
+    .sidebar.toggled.active, .sidebar.show {
+        z-index: 1000;
+        margin-left: 0;
+        margin-top: 0;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
+    .sidebar.toggled ul li a span {
+        display: inline;
+    }
+
+    .navbar ul li a i.oi {
+        width: 1.5rem;
+        text-align: center;
+    }
+
+    .sidebar + div.sb-right, .sidebar + div.sb-right.toggled {
+        padding-right: 0;
+        padding-bottom: 3rem;
+    }
+
+    button.sb-addbtn.toggled, button.sb-delbtn.toggled {
+        display: none;
+    }
+
+    button.sb-applybtn {
+        right: 1rem;
+        bottom: 3.5rem;
+    }
+
+    .sidebar.sidebar-right.disabled ~ button.sb-applybtn {
+        bottom: 1rem;
+    }
+
+    .sidebar.sidebar-right.toggled ~ button.sb-applybtn {
+        display: none;
+    }
+
+    .sidebar.sidebar-right.disabled ~ button.sb-applybtn {
+        display: block;
+    }
+
+    .sidebar.sidebar-right ~ button.sb-applybtn.disabled {
+        display: none !important;
+    }
+
+    .sidebar.sidebar-right {
+        min-width: 0;
+        max-width: 0;
+    }
+
+    .sidebar.sidebar-right.toggled, .sidebar.sidebar-right.toggled:hover {
+        min-width: 95vw !important;
+        max-width: 95vw !important;
+        box-shadow: 0px 0px .75rem silver;
+    }
+
+    .sidebar.sidebar-right > .container > .list-unstyled:not(.list-unstyled-bottom) li a i {
+        display: none !important;
+    }
+
+    .sidebar.sidebar-right > .container > .list-unstyled:not(.list-unstyled-bottom) li a span {
+        display: inline !important;
+    }
+
+    .sidebar.sidebar-right.toggled > .container > .list-unstyled:not(.list-unstyled-bottom) li {
+        display: block !important;
+    }
+
+    .sidebar.sidebar-right.toggled > .container > .list-unstyled-bottom li {
+        display: inline-block !important;
+    }
+
+
+    .sidebar.sidebar-right > .container > .list-unstyled-bottom li:first-child a span::after {
+        content: ' Развернуть';
+    }
+
+    .sidebar.sidebar-right.toggled > .container > .list-unstyled-bottom li:first-child a span::after {
+        content: ' Свернуть';
+    }
+
+    .sidebar.sidebar-right:not(.disabled) > .container > .list-unstyled-bottom {
+        position: fixed;
+        display: flex;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: 2.5rem;
+    }
+}
+

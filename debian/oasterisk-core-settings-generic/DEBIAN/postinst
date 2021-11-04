@@ -1,0 +1,12 @@
+#!/bin/sh
+
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/drivers.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/trunks.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/users.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/integration.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/dialplan.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/licenses.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/security.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/logs.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/general.php
+chown -R www-data:www-data /var/www/oasterisk/web/modules/core/views/settings/general/

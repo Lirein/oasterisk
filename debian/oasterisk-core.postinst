@@ -1,0 +1,68 @@
+#!/bin/sh
+
+make_oasterisk() {
+    if ! HostName="$(hostname -f)" ; then
+        HostName="$(hostname)"
+        echo make-ssl-cert: Could not get FQDN, using \"$HostName\".
+        echo make-ssl-cert: You may want to fix your /etc/hosts and/or DNS setup and run
+        echo make-ssl-cert: 'make-ssl-cert /usr/share/ssl-cert/oasterisk.cnf /etc/ssl/private/oasterisk-web.pem --force-overwrite'
+        echo make-ssl-cert: again and split it into a key file and certificate.
+    fi
+    if [ ${#HostName} -gt 64 ] ; then
+        AltName="DNS:$HostName"
+        HostName="$(hostname)"
+    fi
+}
+
+export HostName
+make-ssl-cert /usr/share/ssl-cert/oasterisk.cnf /etc/ssl/private/oasterisk-web.pem
+
+if [ -f /etc/ssl/private/oasterisk-web.pem ]
+then
+ openssl x509 -outform pem -in /etc/ssl/private/oasterisk-web.pem -out /etc/ssl/certs/oasterisk-web.crt
+ openssl pkey -outform pem -in /etc/ssl/private/oasterisk-web.pem -out /etc/ssl/private/oasterisk-web.key
+fi
+
+addgroup --system asterisk
+adduser --system asterisk --ingroup asterisk
+usermod -a -G asterisk www-data
+usermod -a -G www-data asterisk
+sed -i 's/#AST_/AST_/' /etc/default/asterisk
+chown -R www-data:www-data /var/www/oasterisk
+chmod 770 /var/www/oasterisk/licensing
+chmod 770 /var/www/oasterisk/backups
+
+chown -R asterisk:asterisk /etc/asterisk
+chown -R asterisk:asterisk /var/lib/asterisk
+chown -R asterisk:asterisk /usr/share/asterisk
+chown -R asterisk:asterisk /var/spool/asterisk
+chown -R asterisk:asterisk /var/log/asterisk
+chmod 770 /var/spool/asterisk/tmp
+chmod 770 /var/spool/asterisk/outgoing
+chmod -R g+rw /etc/asterisk
+chmod +x /var/www/oasterisk/web/agi.php
+if [ ! -f /usr/share/asterisk/agi-bin/oasterisk.php ]
+then
+  ln -s /var/www/oasterisk/web/agi.php /usr/share/asterisk/agi-bin/oasterisk.php
+fi
+
+service asterisk restart
+
+a2dismod mpm_event
+a2enmod mpm_prefork
+a2enmod php7.0
+a2enmod ssl
+a2enmod rewrite
+phpenmod memcached
+a2ensite oasterisk
+a2enconf oasterisk-ports
+
+service apache2 restart
+
+if crontab -l | grep "core restart now" >/dev/null 2>&1
+then
+  echo Ignoring crontab asterisk restart
+else
+  echo Adding crontab rule restart asterisk at one hour o\'clock
+  echo "1 1 * * * /usr/sbin/asterisk -rx 'core restart now' >/dev/null 2>/dev/null" >> /var/spool/cron/crontabs/root
+fi

@@ -1,0 +1,5 @@
+96c623cd908534e1a489d0e53c85124d  usr/share/doc/oasterisk-core-settings-logs/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-core-settings-logs/copyright
+ce34882f602cfe69afed120e7cfa9c5d  var/www/oasterisk/web/modules/core/views/settings/logs/cdr.php
+427ebdeba5cd577d12729d821144bf9f  var/www/oasterisk/web/modules/core/views/settings/logs/syslog.php
+86ded9bbc55cc8459001d71ce8178b39  var/www/oasterisk/web/modules/core/views/settings/logs/version

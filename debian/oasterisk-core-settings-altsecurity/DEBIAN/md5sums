@@ -1,0 +1,5 @@
+14c0b4e2e8099643d74eeea0cc385eda  usr/share/doc/oasterisk-core-settings-altsecurity/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-core-settings-altsecurity/copyright
+c81ae0a64189fb9f7dbf7a849b7c6532  var/www/oasterisk/web/modules/core/views/settings/security/acls.php
+7e28417240a77f21971b8298a8a4feef  var/www/oasterisk/web/modules/core/views/settings/security/altgroups.php
+75c4a463ab89c0aacd1f29e5a8ad99e5  var/www/oasterisk/web/modules/core/views/settings/security/users.php

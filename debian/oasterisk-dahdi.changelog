@@ -1,0 +1,46 @@
+oasterisk (0.9.14) unstable; urgency=medium
+
+  * Завершение рефакторинга ядра на уровне моделей
+
+ -- Ivan Batalin <director@oas.su>  Sun, 10 May 2020 20:44:12 +0500
+
+oasterisk (0.9.7-r356) unstable; urgency=medium
+
+  * Added DAHDI seczones support in altgroups
+
+ -- Ivan Batalin <director@oas.su>  Thu, 01 Aug 2019 11:29:16 +0500
+
+oasterisk (0.9.7-r331) unstable; urgency=medium
+
+  + Added tree widgetset events
+  + Added object exports on seczone capable views
+  + Added new group interface model
+  * Fixed modules register call engine
+
+ -- Ivan Batalin <director@oas.su>  Tue, 16 Jul 2019 12:47:25 +0500
+
+oasterisk (0.9.7-5) unstable; urgency=medium
+
+  * Added extended trunk info
+
+ -- Ivan Batalin <director@oas.su>  Wed, 27 Sep 2017 13:27:34 +0500
+
+oasterisk (0.9.7-1) unstable; urgency=medium
+
+  * Parse dahdi channel config, show trunk and peer status
+  * Dependency to asterisk-dahdi
+
+ -- Ivan Batalin <director@oas.su>  Tue, 26 Sep 2017 09:41:25 +0500
+
+oasterisk (0.9.6-2) stable; urgency=medium
+
+  * Added license agreement    
+  * Fixed multiple HDD license CSR creation (PHP5 related bug)
+
+ -- Ivan Batalin <director@oas.su>  Thu, 31 Aug 2017 17:25:18 +0500
+
+oasterisk (0.9.5-3) stable; urgency=medium
+
+  * First packaged version
+
+ -- Ivan Batalin <director@oas.su>  Fri, 18 Aug 2017 17:59:39 +0500

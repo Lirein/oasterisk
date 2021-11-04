@@ -1,0 +1,11 @@
+Package: oasterisk-core-settings-modules
+Source: oasterisk
+Version: 0.9.14-r762
+Architecture: all
+Maintainer: Ivan Batalin <director@oas.su>
+Installed-Size: 42
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: oasterisk-core-settings-generic (>= 0.9.14-r762)
+Section: web
+Priority: optional
+Description: OAS'tersik core package, module loading/unloading settings

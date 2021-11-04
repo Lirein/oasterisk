@@ -1,0 +1,17 @@
+887174f864e29aaf9a0c69cb3f700875  usr/share/doc/oasterisk-core-settings-generic/changelog.Debian.gz
+ded548ef7c8d69b7ba12a6ce106afe27  usr/share/doc/oasterisk-core-settings-generic/copyright
+fe1a19a9b4f0abc97eac8c59a87f4580  var/www/oasterisk/web/modules/core/views/settings/dialplan.php
+a81c8a9eddc9430fa8cd70919ca79cfe  var/www/oasterisk/web/modules/core/views/settings/drivers.php
+d57eb5c8773bc4b92c1727b29373d680  var/www/oasterisk/web/modules/core/views/settings/general.php
+5d9eb9fc24782de339edc812d15388d9  var/www/oasterisk/web/modules/core/views/settings/general/appearence.php
+91eccddc35256cd7b120069c974d9933  var/www/oasterisk/web/modules/core/views/settings/general/asterisk.php
+f8c74ef9235593c8250010ae213b5385  var/www/oasterisk/web/modules/core/views/settings/general/fax.php
+b7f1ea49f1fd8d294f277bc54fe468b4  var/www/oasterisk/web/modules/core/views/settings/general/features.php
+23103cd97fecae3a2a29b598afc51c4b  var/www/oasterisk/web/modules/core/views/settings/general/musiconhold.php
+d6d3804f1744d48ce701e0ec2888839c  var/www/oasterisk/web/modules/core/views/settings/general/rtp.php
+99f0599d272aabe93277f597fc3d25cd  var/www/oasterisk/web/modules/core/views/settings/integration.php
+fcd2e2ebcb0a5484e991b4f6c9e70a20  var/www/oasterisk/web/modules/core/views/settings/licenses.php
+24066ab30ae2fe5b5f80b81171ce6283  var/www/oasterisk/web/modules/core/views/settings/logs.php
+886e3f59301b132ed247e8ccbd16ccd2  var/www/oasterisk/web/modules/core/views/settings/security.php
+0e2a79e61ce31128e02ca067de8981b8  var/www/oasterisk/web/modules/core/views/settings/trunks.php
+4cb2038311502d0c631c477ffb57df39  var/www/oasterisk/web/modules/core/views/settings/users.php

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+chown -R www-data:www-data /var/www/oasterisk/web/modules/confbridge
+cc /var/www/oasterisk/web/modules/confbridge/.call.c -o /var/www/oasterisk/web/modules/confbridge/.call
+rm /var/www/oasterisk/web/modules/confbridge/.call.c
+chown asterisk:asterisk /var/www/oasterisk/web/modules/confbridge/.call
+chmod u+sx,g+sx,o-x /var/www/oasterisk/web/modules/confbridge/.call
+if crontab -l | grep schedule-persistent-rooms >/dev/null 2>&1
+then
+  echo Ignoring crontab reschedule
+else
+  echo Adding crontab rule for rescheduling conference rooms each hour
+  echo "1 * * * * http_proxy='' https_proxy='' wget 'https://127.0.0.1:4430/settings/rooms/room?json=run&login=voip&passwd=voip&run=schedule-persistent-rooms' --no-check-certificate -O - 2>/dev/null" >> /var/spool/cron/crontabs/root
+fi

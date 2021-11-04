@@ -1,0 +1,10 @@
+#!/bin/sh
+LAME="/usr/bin/lame"
+UUID="$1"
+LOGIN="$2"
+PASSWD="$3"
+LOCALURL="$4"
+DIR="/var/spool/asterisk/monitor"
+$LAME -V2 $DIR/$UUID.wav $DIR/$UUID.mp3
+#rm -f $DIR/$UUID.wav
+wget "https://127.0.0.1:4430/integration?json=run&run=planfix&login=${LOGIN}&passwd=${PASSWD}&uuid=${UUID}&localurl=${LOCALURL}" --no-check-certificate
